@@ -2,6 +2,11 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.nav-btn:hover {
+.nav-btn:hover, .v-btn:hover {
     background-color: #4BA4F2 !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
