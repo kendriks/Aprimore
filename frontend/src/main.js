@@ -11,4 +11,10 @@ const vuetify = createVuetify({
   directives,
 })
 
+export default createVuetify({
+  icons: {
+    defaultSet: 'mdi',
+  },
+})
+
 createApp(App).use(vuetify).mount('#app')
