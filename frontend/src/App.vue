@@ -8,6 +8,7 @@ import Navbar from './components/Navbar.vue';
   <v-app>
     <Navbar />
     <BuscaFiltro />
+    <RouterView/>
     <Footer />
   </v-app>
 </template>
