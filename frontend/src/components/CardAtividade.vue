@@ -1,37 +1,20 @@
 <template>
-  <v-card>
+  <v-card class="activity-card">
     <v-img
       :src="atividade.imagem"
       :alt="atividade.titulo"
-      height="200"
       cover
+      class="activity-image"
     />
 
-    <v-card-text class="pt-0">
-      <h3 class="text-subtitle-1 font-weight-bold">
-        {{ atividade.titulo }}
-      </h3>
-
-      <div class="text-caption mb-2">
-        {{ atividade.data }}
-      </div>
-
-      <div class="text-body-2 mt-3">
-        <div>
-          <v-icon size="small" class="mr-1">
-            mdi-clock-outline
-          </v-icon>
-
-          {{ atividade.horario }}
+    <v-card-text class="activity-card-text">
+      <div class="activity-title-date">
+        <div class="text-caption">
+          {{ atividade.data }}
         </div>
-
-        <div class="mt-1">
-          <v-icon size="small" class="mr-1">
-            mdi-map-marker-outline
-          </v-icon>
-
-          {{ atividade.local }}
-        </div>
+        <h3 class="text-subtitle-1 font-weight-bold">
+          {{ atividade.titulo }}
+        </h3>
       </div>
     </v-card-text>
   </v-card>
